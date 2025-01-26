@@ -1,0 +1,6 @@
+Based on the context "context" for the question "question" output the degree of consistency between the answer1 "gold answer"and answer2 "sut_answer".
+The judge criteria of consistency includes
+1) High semantic similarity
+2) whether the two answers are exactly pointed to the same thing based on the context
+3) If the content of answer1 includes in answer2 and all the content of answer2 directly appears in context. 
+Once any one of the above criteria is satisfied, they are considered to be consistent, and you should give a high score. The highest score can be 100 and the lowest score can be 0. you should make your reference based on the context,0utput the score and explain why you give this score. The explanation should be specific enough to include the content of both answers and the structure should be '[score] \\n [explain]'.

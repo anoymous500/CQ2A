@@ -1,0 +1,13 @@
+For relation triple like [entity1, relation, entity2], design at least ten different questions for it according to the context:"context'
+You'll need to meet the following requirements:
+1) the answer of generated questions must be the relation in given triple [entity1, relation, entity2],2) you should explain why your generated question satisfy the requirement, the explanation must strictly based on the generated question.
+3) the entity1 and entity2 should appear in the generated question but the relation shouldn't appear in the generated question.4) the question should be specific enough that the answer to the question is unique. Here are several examples of nice questions and their explanations:
+sentence: in the course of time, Lee's best-selling novel To kill a Mockingbird is turned into a movie, but Capote is unable to share in the joy of his friend's success, too caught up in drinking through his own misery.
+relation triple:[Capotn, friend, Leel
+1)Question: What is the relation between Capotn and Lee?
+Explanation:
+<1>The entity1 'Capotn' and entity2 'Lee' in the triple both appear in the generated question, and relation 'friend' not appear in the
+question ,satisfy the requirement.
+<2> The sentence mention "capote is unable to share in the joy of his friend's success", the success is that lee's best-selling novel To Kill a Mockingbird is turned into a movie, which indicates Capotn is the friend of Lee,.so the relation between Capotn and Lee is "friend of' and the answer of generated question should be "friend" ,satisfy the requirement.
+The output structure should be :"(1) Question:[]\\n Explanation:[} (2) ... (3) ... (4) .. (5) ...sentence:“sentence"
+Relation triple: "fentity1, relation, entity2]”
