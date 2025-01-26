@@ -1,1 +1,0 @@
-According to the context 'context' and question 'question', the answer of the question is a word or phrase, please output the answer. Remember that the output should only be the answer without any other prompts.
