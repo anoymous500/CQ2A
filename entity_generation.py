@@ -1510,50 +1510,50 @@ if __name__ == '__main__':
     #     b = 1
     # c_inf = acquire_dependence_tree(context, nlp)
     # search_once_word(context,nlp,writer,ch_type='NOUN')
-    # with open('Dataset/boolq_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
-    #     raw = f.readlines()
-    #     result_text = []
-    #     for r in raw:
-    #         result_text.append(r)
-    #     f.close()
-    # # random_text_list = random.sample(result_text, 10)
-    # random_text_list = result_text[30:40]
+    with open('Dataset/boolq_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
+        raw = f.readlines()
+        result_text = []
+        for r in raw:
+            result_text.append(r)
+        f.close()
+    # random_text_list = random.sample(result_text, 10)
+    random_text_list = result_text
     # start_time = time.time()
     new_context_main(random_text_list, f'experiment/fact_data/boolq_v_p_{file_tail}.csv', f'experiment/fact_data/boolq_v_p_raw_{file_tail}.csv',
                      nlp=nlp, type='VERB', cond='phrases',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/boolq_n_p_{file_tail}.csv', f'experiment/fact_data/boolq_n_p_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/boolq_v_w_{file_tail}.csv', f'experiment/fact_data/boolq_v_w_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='VERB', cond='words',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/boolq_n_w_{file_tail}.csv', f'experiment/fact_data/boolq_n_w_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='NOUN', cond='words', prompt_type=1)
-    # with open('Dataset/squad2_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
-    #     raw = f.readlines()
-    #     result_text = []
-    #     for r in raw:
-    #         result_text.append(r)
-    #     f.close()
-    # random_text_list = result_text[30:40]
-    # new_context_main(random_text_list, f'experiment/fact_data/squad2_v_p_{file_tail}.csv', f'experiment/fact_data/squad2_v_p_raw_{file_tail}.csv',nlp = nlp,type = 'VERB',cond='phrases',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/squad2_n_p_{file_tail}.csv', f'experiment/fact_data/squad2_n_p_raw_{file_tail}.csv',nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/squad2_v_w_{file_tail}.csv', f'experiment/fact_data/squad2_v_w_raw_{file_tail}.csv', nlp=nlp, type='VERB', cond='words',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/squad2_n_w_{file_tail}.csv', f'experiment/fact_data/squad2_n_w_raw_{file_tail}.csv', nlp=nlp, type='NOUN', cond='words',prompt_type=1)
-    # with open('Dataset/nat_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
-    #     raw = f.readlines()
-    #     result_text = []
-    #     for r in raw:
-    #         result_text.append(r)
-    #     f.close()
-    # # random_text_list = random.sample(result_text, 10)
-    # random_text_list = result_text[30:40]
-    # new_context_main(random_text_list, f'experiment/fact_data/nat_v_p_{file_tail}.csv', f'experiment/fact_data/nat_v_p_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='VERB', cond='phrases',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/nat_n_p_{file_tail}.csv', f'experiment/fact_data/nat_n_p_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/nat_v_w_{file_tail}.csv', f'experiment/fact_data/nat_v_w_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='VERB', cond='words',prompt_type=1)
-    # new_context_main(random_text_list, f'experiment/fact_data/nat_n_w_{file_tail}.csv', f'experiment/fact_data/nat_n_w_raw_{file_tail}.csv',
-    #                  nlp=nlp, type='NOUN', cond='words',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/boolq_n_p_{file_tail}.csv', f'experiment/fact_data/boolq_n_p_raw_{file_tail}.csv',
+                     nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/boolq_v_w_{file_tail}.csv', f'experiment/fact_data/boolq_v_w_raw_{file_tail}.csv',
+                     nlp=nlp, type='VERB', cond='words',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/boolq_n_w_{file_tail}.csv', f'experiment/fact_data/boolq_n_w_raw_{file_tail}.csv',
+                     nlp=nlp, type='NOUN', cond='words', prompt_type=1)
+    with open('Dataset/squad2_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
+        raw = f.readlines()
+        result_text = []
+        for r in raw:
+            result_text.append(r)
+        f.close()
+    random_text_list = result_text\
+    new_context_main(random_text_list, f'experiment/fact_data/squad2_v_p_{file_tail}.csv', f'experiment/fact_data/squad2_v_p_raw_{file_tail}.csv',nlp = nlp,type = 'VERB',cond='phrases',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/squad2_n_p_{file_tail}.csv', f'experiment/fact_data/squad2_n_p_raw_{file_tail}.csv',nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/squad2_v_w_{file_tail}.csv', f'experiment/fact_data/squad2_v_w_raw_{file_tail}.csv', nlp=nlp, type='VERB', cond='words',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/squad2_n_w_{file_tail}.csv', f'experiment/fact_data/squad2_n_w_raw_{file_tail}.csv', nlp=nlp, type='NOUN', cond='words',prompt_type=1)
+    with open('Dataset/nat_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
+        raw = f.readlines()
+        result_text = []
+        for r in raw:
+            result_text.append(r)
+        f.close()
+    # random_text_list = random.sample(result_text, 10)
+    random_text_list = result_text
+    new_context_main(random_text_list, f'experiment/fact_data/nat_v_p_{file_tail}.csv', f'experiment/fact_data/nat_v_p_raw_{file_tail}.csv',
+                     nlp=nlp, type='VERB', cond='phrases',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/nat_n_p_{file_tail}.csv', f'experiment/fact_data/nat_n_p_raw_{file_tail}.csv',
+                     nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/nat_v_w_{file_tail}.csv', f'experiment/fact_data/nat_v_w_raw_{file_tail}.csv',
+                     nlp=nlp, type='VERB', cond='words',prompt_type=1)
+    new_context_main(random_text_list, f'experiment/fact_data/nat_n_w_{file_tail}.csv', f'experiment/fact_data/nat_n_w_raw_{file_tail}.csv',
+                     nlp=nlp, type='NOUN', cond='words',prompt_type=1)
     #
     # merge_csv('nat', file_tail)
     # merge_csv('squad2', file_tail)
@@ -1563,8 +1563,8 @@ if __name__ == '__main__':
     # qa_to_sut_inf(f'experiment/fact_data/squad2_all_{file_tail}.csv', f'experiment/sut_test/squad2_all_{file_tail}.tsv')
     # qa_to_sut_inf(f'experiment/fact_data/nat_all_{file_tail}.csv', f'experiment/sut_test/nat_all_{file_tail}.tsv')
     # qa_to_sut_inf(f'experiment/fact_data/boolq_all_{file_tail}.csv', f'experiment/sut_test/boolq_all_{file_tail}.tsv')
-    # use_unifiedqa_inf(f'experiment/sut_test/squad2_all_{file_tail}.tsv', f'experiment/fact_data/squad2_all_{file_tail}.csv',
-    #                   f'experiment/sut_output/squad2_all_output_{file_tail}.csv')
+    use_unifiedqa_inf(f'experiment/sut_test/squad2_all_{file_tail}.tsv', f'experiment/fact_data/squad2_all_{file_tail}.csv',
+                      f'experiment/sut_output/squad2_all_output_{file_tail}.csv')
     # use_unifiedqa_inf(f'experiment/sut_test/nat_all_{file_tail}.tsv', f'experiment/fact_data/nat_all_{file_tail}.csv',
     #                   f'experiment/sut_output/nat_all_output_{file_tail}.csv')
     # use_unifiedqa_inf(f'experiment/sut_test/boolq_all_{file_tail}.tsv', f'experiment/fact_data/boolq_all_{file_tail}.csv',
