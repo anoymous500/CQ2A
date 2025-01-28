@@ -9,3 +9,6 @@ For entity question generation
 For relation question generation
 `python relation_generation.py`
 # manual_check
+The results of the manual annotation in the experiment are in the `manual_check.zip`
+# prompt
+The prompts we use in the experiment are included in `prompt_list`
