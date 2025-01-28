@@ -1510,7 +1510,7 @@ if __name__ == '__main__':
     #     b = 1
     # c_inf = acquire_dependence_tree(context, nlp)
     # search_once_word(context,nlp,writer,ch_type='NOUN')
-    # with open('boolq_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
+    # with open('Dataset/boolq_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
     #     raw = f.readlines()
     #     result_text = []
     #     for r in raw:
@@ -1527,7 +1527,7 @@ if __name__ == '__main__':
     #                  nlp=nlp, type='VERB', cond='words',prompt_type=1)
     # new_context_main(random_text_list, f'experiment/fact_data/boolq_n_w_{file_tail}.csv', f'experiment/fact_data/boolq_n_w_raw_{file_tail}.csv',
     #                  nlp=nlp, type='NOUN', cond='words', prompt_type=1)
-    # with open('squad2_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
+    # with open('Dataset/squad2_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
     #     raw = f.readlines()
     #     result_text = []
     #     for r in raw:
@@ -1538,7 +1538,7 @@ if __name__ == '__main__':
     # new_context_main(random_text_list, f'experiment/fact_data/squad2_n_p_{file_tail}.csv', f'experiment/fact_data/squad2_n_p_raw_{file_tail}.csv',nlp=nlp, type='NOUN', cond='phrases',prompt_type=1)
     # new_context_main(random_text_list, f'experiment/fact_data/squad2_v_w_{file_tail}.csv', f'experiment/fact_data/squad2_v_w_raw_{file_tail}.csv', nlp=nlp, type='VERB', cond='words',prompt_type=1)
     # new_context_main(random_text_list, f'experiment/fact_data/squad2_n_w_{file_tail}.csv', f'experiment/fact_data/squad2_n_w_raw_{file_tail}.csv', nlp=nlp, type='NOUN', cond='words',prompt_type=1)
-    # with open('nat_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
+    # with open('Dataset/nat_dev_context.txt', mode='r', encoding='utf-8', newline='') as f:
     #     raw = f.readlines()
     #     result_text = []
     #     for r in raw:
