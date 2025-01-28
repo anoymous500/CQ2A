@@ -863,21 +863,21 @@ sim_model = SimCSE("simcse")
 # rel_main('squad2_train_context.txt')
 if __name__ == '__main__':
     file_tail = 'real'
-    rel_main('squad2_dev_context.txt', 1000, 1203,file_tail,'1000_all')
-    # rel_main('boolq_dev_context.txt', 2000, 2938,file_tail,'2000_all')
-    # rel_main('nat_dev_context.txt', 70, 114,file_tail,'70_all')
+    rel_main('Dataset/squad2_dev_context.txt', 0, 1203,file_tail,'1000_all')
+    rel_main('Dataset/boolq_dev_context.txt', 0, 2938,file_tail,'2000_all')
+    rel_main('Dataset/nat_dev_context.txt', 0, 114,file_tail,'70_all')
     # # # # # #
     # # # # # #
     qa_to_sut_rel(f'rel_part/rel_squad2_q_{file_tail}.csv', f'experiment/finetune/finetune_data/squad2/rel_squad2_finetune_{file_tail}.tsv',500)
     qa_to_sut_rel(f'rel_part/rel_nat_q_{file_tail}.csv', f'experiment/finetune/finetune_data/narrativeqa/rel_narrativeqa_finetune_{file_tail}.tsv',500)
     qa_to_sut_rel(f'rel_part/rel_boolq_q_{file_tail}.csv', f'experiment/finetune/finetune_data/boolq/rel_boolq_finetune_{file_tail}.tsv',100)
     # # #
-    # use_unifiedqa_rel(f'experiment/sut_test/rel_squad2_all_{file_tail}.tsv', f'rel_part/rel_squad2_q_{file_tail}.csv',
-    #                   f'experiment/sut_output/rel_squad2_all_output_{file_tail}.csv')
-    # use_unifiedqa_rel(f'experiment/sut_test/rel_nat_all_{file_tail}.tsv', f'rel_part/rel_nat_q_{file_tail}.csv',
-    #                   f'experiment/sut_output/rel_nat_all_output_{file_tail}.csv')
-    # use_unifiedqa_rel(f'experiment/sut_test/rel_boolq_all_{file_tail}.tsv', f'rel_part/rel_boolq_q_{file_tail}.csv',
-    #                   f'experiment/sut_output/rel_boolq_all_output_{file_tail}.csv')
+    use_unifiedqa_rel(f'experiment/sut_test/rel_squad2_all_{file_tail}.tsv', f'rel_part/rel_squad2_q_{file_tail}.csv',
+                      f'experiment/sut_output/rel_squad2_all_output_{file_tail}.csv')
+    use_unifiedqa_rel(f'experiment/sut_test/rel_nat_all_{file_tail}.tsv', f'rel_part/rel_nat_q_{file_tail}.csv',
+                      f'experiment/sut_output/rel_nat_all_output_{file_tail}.csv')
+    use_unifiedqa_rel(f'experiment/sut_test/rel_boolq_all_{file_tail}.tsv', f'rel_part/rel_boolq_q_{file_tail}.csv',
+                      f'experiment/sut_output/rel_boolq_all_output_{file_tail}.csv')
     # qa_to_sut(f'rel_part/sent_rel_question_s.csv', f'experiment/sut_test/rel_sut.tsv')
     # qa_to_sut_inf(f'experiment/fact_data/squad2_all_1.csv', f'experiment/sut_test/squad2_all_1.tsv')
     # qa_to_sut_inf(f'experiment/fact_data/nat_all_1.csv', f'experiment/sut_test/nat_all_1.tsv')
