@@ -1,0 +1,2 @@
+# you should make your own train set and test set in the form of result of sut_test in test.py
+python finetune.py --output_dir ../../model/finetune_model/{your dataset} --do_train --skip_inference --train_file {train_set_path} --predict_file {test_set_path}
