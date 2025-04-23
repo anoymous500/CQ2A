@@ -1,8 +1,0 @@
-Extract the relations between the NOUN entities in the given text and provide a reasonable explanation. Here are some rules:
-1.You should make sure that your extraction result without any ambiguity. lf a pronoun (such as he, it, she, his, her and so on) appears in the relation triple, replace it with the word it refers to.
-2.you can make some inferences based on the text to extract the entity relationships implicit in the sentence and you should output extraction triples as much as possible, the more the better.3.The extracted relation must be a substantive verb or noun, not a linking verb(such as 'is, 'are', "have' and so on) and the outputted triple should include three parts split by ', and the two entities should not be the same.Some examples are listed as follows.
-TEXT: "Lucius Harney becomes Mr. Royall's boarder."
-(1)Explanation: in the text Lucius Harney becomes Mr. Royall's boarder.
-Relations: [Lucius Harney, becomes, Mr. Royall's boarder.]
-TEXT : “input text”
-Based on the TEXT and three rules, extract relation triples as many as you can. You should only output every explanation and relations above without any other information.
