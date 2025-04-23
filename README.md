@@ -1,14 +1,7 @@
-# CQ2A
+# LLM-EVal
 # Environment
 `pip install -r requirements.txt`
 # Dataset
-The folder `Dataset` contains the context derived from the test set of Boolq\NarrativeQA and Squad2. In our method, we will use these contexts to generate questions.
+下载任意数据集并根据提示进行预处理
 # Run
-For entity question generation  
-```python entity_generation.py```  
-For relation question generation  
-```python relation_generation.py```
-# manual_check
-The results of the manual annotation in the experiment are in the `manual_check.zip`
-# prompt
-The prompts we use in the experiment are included in `prompt_file`
+在实际使用过程中，推荐按照如下顺序依次执行脚本：data_process.py、entity(rel)_extraction.py、q_generation.py、filter.py、test.py以完成测试用例的生成流程。在此基础上，可进一步调用 experiment 目录下的实验脚本，以开展本文所设定的各项实验任务
