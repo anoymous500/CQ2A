@@ -8,6 +8,7 @@ For entity question generation
 ```python entity_generation.py```  
 For relation question generation  
 ```python relation_generation.py```
+See the Python file in ```experiment.zip``` for the experiment implementation.
 # manual_check
 The results of the manual annotation in the experiment are in the `manual_check.zip`
 # prompt
